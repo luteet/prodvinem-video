@@ -5,7 +5,7 @@ let data = {
         datasets: [
             {
                 label: 'Подписчиков',
-                data: [10000, 20000, 30000, 60000, 100000, 220000, 460000, 700000, 1000000, 1200000, 1500000, 1700000],
+                data: [10000, 20000, 30000, 60000, 100000, 220000, 460000, 700000, 1000000, 1200000, 1500000, 1700000, 1500000, 1300000, 1800000],
                 backgroundColor: [
                     'rgba(234, 5, 5, 1)'
                 ],
@@ -19,10 +19,13 @@ let data = {
                 pointHoverBorderColor: 'rgba(234, 5, 5, 1)',
                 pointHoverBackgroundColor: 'rgba(234, 5, 5, 1)',
                 pointHoverRadius: 8,
+
+                cubicInterpolationMode: 'monotone',
+                tension: 0.4
             },
             {
                 label: 'Лайков',
-                data: [5000, 10000, 15000, 30000, 50000, 70000, 80000, 90000, 100000, 110000, 150000, 170000],
+                data: [5000, 10000, 15000, 30000, 50000, 70000, 80000, 90000, 100000, 110000, 150000, 170000, 200000, 160000, 130000, 180000],
                 backgroundColor: [
                     'rgba(5, 193, 234, 1)'
                 ],
@@ -36,10 +39,13 @@ let data = {
                 pointHoverBorderColor: 'rgba(5, 193, 234, 1)',
                 pointHoverBackgroundColor: 'rgba(5, 193, 234, 1)',
                 pointHoverRadius: 8,
+
+                cubicInterpolationMode: 'monotone',
+                tension: 0.4
             },
             {
                 label: 'Просмотров',
-                data: [15000, 25000, 40000, 70000, 120000, 270000, 550000, 800000, 1200000, 1500000, 1800000, 2100000],
+                data: [15000, 25000, 40000, 70000, 120000, 270000, 550000, 800000, 1200000, 1500000, 1800000, 2100000, 1900000, 1500000, 2000000],
                 backgroundColor: [
                     'rgba(56, 167, 4, 1)'
                 ],
@@ -53,6 +59,9 @@ let data = {
                 pointHoverBorderColor: 'rgba(56, 167, 4, 1)',
                 pointHoverBackgroundColor: 'rgba(56, 167, 4, 1)',
                 pointHoverRadius: 8,
+
+                cubicInterpolationMode: 'monotone',
+                tension: 0.4
             }
         ]
 }
