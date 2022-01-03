@@ -5,7 +5,7 @@ let data = {
         datasets: [
             {
                 label: 'Подписчиков',
-                data: [10000, 20000, 30000, 60000, 100000, 220000, 460000, 700000, 1000000, 1200000, 1500000, 1700000, 1500000, 1300000, 1800000],
+                data: [500000, 450000, 370000, 410000, 900000, 1050000, 1070000, 1110000, 1130000, 1030000, 1050000, 1200000, 1300000, 1400000, 1200000],
                 backgroundColor: [
                     'rgba(234, 5, 5, 1)'
                 ],
@@ -21,7 +21,8 @@ let data = {
                 pointHoverRadius: 8,
 
                 cubicInterpolationMode: 'monotone',
-                tension: 0.4
+                
+                spanGaps: 1,
             },
             {
                 label: 'Лайков',
@@ -61,7 +62,7 @@ let data = {
                 pointHoverRadius: 8,
 
                 cubicInterpolationMode: 'monotone',
-                tension: 0.4
+                tension: 1
             }
         ]
 }
