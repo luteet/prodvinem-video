@@ -51,7 +51,14 @@ const chart = new Chart(ctx.getContext('2d'), {
 
                         if(valueLength >= 4 && valueLength <= 6) {
 
-                            return valueString.slice(0,3) +' тыс.';
+                            if(valueLength == 4) {
+                                return valueString.slice(0,1) + ',' + valueString.slice(1,2) + ' тыс.';
+                            } else if(valueLength == 5) {
+                                return valueString.slice(0,2) + ',' + valueString.slice(2,3) + ' тыс.';
+                            } else {
+                                return valueString.slice(0,3) +' тыс.';
+                            }
+                            
 
                         } else if(valueLength >= 7 && valueLength <= 9) {
 
