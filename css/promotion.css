@@ -261,8 +261,17 @@
 
 
 .promotion-competitors-channels__header {
+    display: flex;
+
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+}
+
+@media(min-width: 769px) {
+    .promotion-competitors-channels__header {
+        flex-direction: row;
+    }   
 }
 
 .direction .promotion-competitors-channels__header--title, .promotion-competitors-channels__header--title {
@@ -311,7 +320,13 @@
 }
 
 .promotion-block__chart {
+    max-height: 600px;
+    
     padding: 50px 20px 30px 20px;
+}
+
+.promotion-block__chart canvas {
+    max-height: 400px;
 }
 
 .promotion-block__chart--tooltip {
@@ -360,6 +375,8 @@
 
 .chart-legend-list {
     display: flex;
+    flex-wrap: wrap;
+
     font-size: 14px;
     font-family: 'Intro Regular';
 
@@ -371,7 +388,7 @@
 .chart-legend-li {
     display: flex;
 
-    margin: 0 7px;
+    margin: 7px;
 }
 
 .chart-legend-box {

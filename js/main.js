@@ -268,14 +268,14 @@ const chart = new Chart(ctx.getContext('2d'), {
             mode: 'index',
         }, */
         responsive: true,
+        
         scales: {
+            
             y: {
                 ticks: {
                     font: {
                         size: 14,
                         family: 'Intro Book, sans-serif',
-                        
-                        /* family: 'Intro Book', */
                     },
                     callback:function(value, index, values) {
                         let valueString = value.toString(),
@@ -315,7 +315,7 @@ const chart = new Chart(ctx.getContext('2d'), {
                         family: 'Intro Book',
                     },
                 }
-            }
+            },
         },
         plugins: {
             tooltip: {
