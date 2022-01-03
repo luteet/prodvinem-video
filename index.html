@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="q6t95Nbdgdw4plKv5sixiVbuGeG5YxLfcycV5S2C">
+    <title>Продвижение видео</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://account.prodvinem.video/favicons/android-chrome-192x1.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://account.prodvinem.video/favicons/android-chrome-192x1.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://account.prodvinem.video/favicons/android-chrome-192x1.png">
+    <link rel="apple-touch-startup-image" href="https://account.prodvinem.video/favicons/android-chrome-192x1.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="https://account.prodvinem.video/favicons/android-chrome-512x5.png">
+    <style>
+        :root {
+            --main: #fc4469;
+            --main-darkest: #cd2a4a;
+        }
+
+        [data-name="profile-settings"] > div {
+            width: 400px;
+        }
+    </style>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+
+    <link href="css/promotion.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container header-container">
+        <a href="https://account.prodvinem.video/dashboard" class="logo">
+            <img src="img/logo.svg" alt="Logo">
+        </a>
+        <div class="user-block">
+
+            <a class="tariff" href="https://account.prodvinem.video/payment">
+                <div class="tariff__header tariff__x10">
+                    <p class="tariff__txt">
+                        Тариф “X10”
+                        <img src="img/rocket.png" alt="tariff__icon" class="tariff-icon">
+                    </p>
+                </div>
+                <div class="tariff__body">
+                    <div class="tariff__link">
+                        до 22.01.2022
+                        <img src="img/tarif__arrow.svg" alt="tarif__arrow">
+                    </div>
+                </div>
+            </a>
+
+            <div class="setings__block">
+                <p>avasilev@edu.hse.ru</p>
+                <div class="setings__block-link">
+                    <a data-popup="profile-settings">Настройки</a>
+                    <form id="logout-form" action="https://account.prodvinem.video/logout" method="POST" class="d-none">
+                        <input type="hidden" name="_token" value="q6t95Nbdgdw4plKv5sixiVbuGeG5YxLfcycV5S2C">
+                    </form>
+                    <a href="https://account.prodvinem.video/logout">
+                        Выйти
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="notifications"></div>
+    <section class="direction">
+        <main class="container" style="padding-bottom: 70px;">
+
+            <div class="promotion-channels">
+
+                <form action="https://account.prodvinem.video/promotion" method="POST" class="promotion-form">
+                    <input type="hidden" name="_token" value="q6t95Nbdgdw4plKv5sixiVbuGeG5YxLfcycV5S2C"> <input
+                        type="text" name="channel_id" placeholder="ВВЕДИТЕ ID КАНАЛА" required="" value="">
+                    <button type="submit">Добавить</button>
+                </form>
+
+            </div>
+            <div class="promotion-block promotion-channel _pt20">
+                <div class="promotion-block__header promotion-channel__header">
+                    <div class="promotion-channel__elem">
+                        <div class="promotion-channel__elem--logo">
+                            <img src="img/logo-channel/logo-1.png" width="60" height="60" alt="" class="promotion-channel__elem--img">
+                        </div>
+                        <div class="promotion-channel__elem--info">
+                            <h3 class="promotion-channel__elem--name">
+                                Green Animation
+                            </h3>
+                            <span class="promotion-channel__elem--subscribers-length">
+                                530 тыс. подписчиков
+                            </span>
+                        </div>
+                        <button class="promotion-channel__elem--remove-btn _promotion-remove-btn">
+                            ✕
+                        </button>
+                    </div>
+                </div>
+                <div class="promotion-block__inner">
+                    <ul class="promotion-block__list promotion-channel__video-list">
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--status">
+                                    На продвижении
+                                </div>
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--status">
+                                    На продвижении
+                                </div>
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--status">
+                                    На продвижении
+                                </div>
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--status">
+                                    На продвижении
+                                </div>
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-channel__video-list--item promotion-channel__video-item">
+                            <div class="promotion-channel__video-item--body">
+                                <div class="promotion-channel__video-item--preview">
+                                    <img src="https://images.unsplash.com/photo-1641157141085-8454fbc33f3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="143" height="81" loading="lazy" alt="" class="promotion-channel__video-item--img">
+                                </div>
+                                <h3 class="promotion-channel__video-item--name">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </h3>
+                                <div class="promotion-channel__video-item--info">
+                                    <span class="promotion-channel__video-item--date">
+                                        12.06.2019  
+                                    </span>
+                                    <span class="promotion-channel__video-item--time">
+                                        21:58:46
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="promotion-block promotion-competitors-channels">
+                <div class="promotion-block__header promotion-competitors-channels__header">
+                    <div class="promotion-competitors-channels__header--info">
+                        <h2 class="promotion-competitors-channels__header--title">
+                            Конкуренты
+                            <span class="promotion-competitors-channels__header--name">
+                                Green Animation
+                            </span>
+                        </h2>
+                    </div>
+                    <form action="#" method="POST" class="promotion-competitors-channels__header--form promotion-competitors-channels__form promotion-form _min">
+                        <input type="text" name="competitor_channel_id" placeholder="ВВЕДИТЕ ID КОНКУРЕНТА" required>
+                        <button type="submit">
+                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 25.6565V1.65723" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M1.00037 13.6569H24.9996" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="promotion-block__inner">
+                    <ul class="promotion-block__list promotion-competitors-channels__list">
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-1.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Swit Dom
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-2.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    The Pixel Kingdom
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-3.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Green Animation
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-4.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Swit Dom
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-1.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-2.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-3.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-4.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-1.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-2.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-3.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promotion-competitors-channels__item">
+                            <div class="promotion-competitors-channels__item--body">
+                                <div class="promotion-competitors-channels__item--logo">
+                                    <img src="img/logo-channel/logo-4.png" width="60" height="60" alt="" class="promotion-competitors-channels__item--img">
+                                    <button class="promotion-competitors-channels__item--remove-btn _promotion-remove-btn">
+                                        ✕
+                                    </button>
+                                </div>
+                                <h3 class="promotion-competitors-channels__item--name">
+                                    Lorem ipsum dolor sit.
+                                </h3>
+                                <div class="promotion-competitors-channels__item--subscribers-length">
+                                    530 тыс. подписчиков
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="promotion-block promotion-competitors-channels">
+                <div class="promotion-block__inner promotion-block__chart">
+                    <canvas width="500" height="250" id="chart" class="promotion-block__chart--elem"></canvas>
+                </div>
+            </div>
+
+        </main>
+    </section>
+    <div class="popup" data-name="profile-settings">
+        <div>
+            <img src="img/close.svg" class="close-popup">
+            <section class="header">Настройки кабинета</section>
+            <section class="body">
+                <form action="https://account.prodvinem.video/profile" method="POST" class="form form-column">
+                    <input type="hidden" name="_token" value="q6t95Nbdgdw4plKv5sixiVbuGeG5YxLfcycV5S2C"> <input
+                        type="email" name="email" placeholder="Email" class="custom" value="avasilev@edu.hse.ru">
+                    <span class="separator"></span>
+                    <input type="password" name="password" placeholder="Пароль" class="custom">
+                    <input type="password" name="password_confirmation" placeholder="Подтвердите пароль" class="custom">
+                    <button type="submit" class="custom">Сохранить</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
