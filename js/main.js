@@ -5,40 +5,41 @@ let data = {
         datasets: [
             {
                 label: 'Подписчиков',
-                data: [500000, 450000, 370000, 410000, 900000, 1050000, 1070000, 1110000, 1130000, 1030000, 1050000, 1200000, 1300000, 1400000, 1200000],
+                data: [250000, 470000, 600000, 720000, 850000, 770000, 600000, 520000, 460000, 330000, 400000, 580000, 660000, 730000, 810000, 790000],
                 backgroundColor: [
                     'rgba(234, 5, 5, 1)'
                 ],
                 borderColor: [
                     'rgba(234, 5, 5, 1)'
                 ],
-                borderWidth: 3,
-                pointRadius: 8,
-                pointBackgroundColor: 'rgba(0, 0, 0, 0)',
-                pointBorderColor: 'rgba(0, 0, 0, 0)',
-                pointHoverBorderColor: 'rgba(234, 5, 5, 1)',
-                pointHoverBackgroundColor: 'rgba(234, 5, 5, 1)',
+                borderWidth: 4,
+                pointRadius: 3,
+                /* pointBackgroundColor: 'rgba(0, 0, 0, 0)',
+                pointBorderColor: 'rgba(234, 5, 5, 1)', */
+                /* pointHoverBorderColor: 'rgba(234, 5, 5, 1)',
+                pointHoverBackgroundColor: 'rgba(234, 5, 5, 1)', */
                 pointHoverRadius: 8,
 
                 cubicInterpolationMode: 'monotone',
                 
-                spanGaps: 1,
+                tension: 0.5
             },
             {
                 label: 'Лайков',
-                data: [5000, 10000, 15000, 30000, 50000, 70000, 80000, 90000, 100000, 110000, 150000, 170000, 200000, 160000, 130000, 180000],
+                data: [500000, 850000, 830000, 800000, 770000, 780000, 1000000, 1400000],
+                spanGaps: true,
                 backgroundColor: [
                     'rgba(5, 193, 234, 1)'
                 ],
                 borderColor: [
                     'rgba(5, 193, 234, 1)'
                 ],
-                borderWidth: 3,
-                pointRadius: 8,
-                pointBackgroundColor: 'rgba(0, 0, 0, 0)',
-                pointBorderColor: 'rgba(0, 0, 0, 0)',
-                pointHoverBorderColor: 'rgba(5, 193, 234, 1)',
-                pointHoverBackgroundColor: 'rgba(5, 193, 234, 1)',
+                borderWidth: 4,
+                pointRadius: 3,
+                /* pointBackgroundColor: 'rgba(0, 0, 0, 0)',
+                pointBorderColor: 'rgba(5, 193, 234, 1)', */
+                /* pointHoverBorderColor: 'rgba(5, 193, 234, 1)',
+                pointHoverBackgroundColor: 'rgba(5, 193, 234, 1)', */
                 pointHoverRadius: 8,
 
                 cubicInterpolationMode: 'monotone',
@@ -53,12 +54,12 @@ let data = {
                 borderColor: [
                     'rgba(56, 167, 4, 1)'
                 ],
-                borderWidth: 3,
-                pointRadius: 8,
-                pointBackgroundColor: 'rgba(0, 0, 0, 0)',
+                borderWidth: 4,
+                pointRadius: 3,
+                /* pointBackgroundColor: 'rgba(0, 0, 0, 0)',
                 pointBorderColor: 'rgba(0, 0, 0, 0)',
                 pointHoverBorderColor: 'rgba(56, 167, 4, 1)',
-                pointHoverBackgroundColor: 'rgba(56, 167, 4, 1)',
+                pointHoverBackgroundColor: 'rgba(56, 167, 4, 1)', */
                 pointHoverRadius: 8,
 
                 cubicInterpolationMode: 'monotone',
@@ -284,7 +285,7 @@ const chart = new Chart(ctx.getContext('2d'), {
             y: {
                 ticks: {
                     font: {
-                        size: 14,
+                        size: 12,
                         family: 'Intro Book, sans-serif',
                     },
                     callback:function(value, index, values) {
@@ -321,7 +322,7 @@ const chart = new Chart(ctx.getContext('2d'), {
             x: {
                 ticks: {
                     font: {
-                        size: 12,
+                        size: 11,
                         family: 'Intro Book',
                     },
                 }

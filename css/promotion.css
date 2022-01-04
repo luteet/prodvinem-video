@@ -389,6 +389,7 @@
     display: flex;
 
     margin: 7px;
+    cursor: pointer;
 }
 
 .chart-legend-box {
